@@ -1,0 +1,456 @@
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+body {
+  scroll-behavior: smooth;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0) !important;
+}
+:has(.Home.active) nav {
+  background-color: transparent !important;
+}
+nav .active {
+  position: relative !important;
+}
+/*Home*/
+
+.button-slider button {
+  position: relative;
+}
+.slide-content p .btn1:hover {
+  background-color: white;
+  color: #1c1c1c !important;
+}
+.button-slider button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+.button-slider button:hover::before {
+  width: 100%;
+  height: 100%;
+}
+#Home .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35%;
+  text-align: center;
+}
+#home .slide-content p a {
+  border: 1px solid white;
+}
+#Home .home-slider {
+  overflow: hidden;
+}
+#Home .background {
+  height: 100vh !important;
+}
+#Home .social-icon a {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+}
+#Home .social-icon a i {
+  color: white;
+}
+
+#About .para .parag {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+#About .para .button .btn1 {
+  width: 150px;
+  background-color: #1c1c1c;
+  color: white;
+}
+#About .para .button .btn1:hover {
+  background-color: white;
+  color: #1c1c1c;
+}
+#About .para .button .btn2 {
+  width: 150px;
+}
+#About .para .title {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/*Service*/
+#Team .container .box .circle {
+  background-color: #cdcdcd;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin-inline: auto;
+}
+#Team .container .box .circle i {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30%;
+}
+#Team .container .box:hover .circle {
+  background-color: #1c1c1c;
+}
+#Team .container .box:hover i {
+  color: white;
+}
+.end-services {
+  background-image: url(/image/counters-bg.jpg);
+  width: 100%;
+}
+.btn-color {
+  color: #fff;
+  background-color: #00c3da;
+}
+.btn-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+.btn.btn-sm {
+  padding: 0 16px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+}
+.line {
+  width: 10%;
+  margin-inline: auto;
+  height: 5px;
+  background-color: #0078ff;
+  text-align: center;
+}
+#Team .card p {
+  word-spacing: 2px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+#Team .card {
+  position: relative;
+  overflow: hidden;
+}
+#Team .card .layer {
+  position: absolute;
+  background-color: #0077ffae;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+#Team .card:hover .layer {
+  top: 0;
+}
+#Team .card h5 {
+  font-weight: 700;
+}
+
+#Services .row .icon {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+#Services .row li {
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+#Services .row .icon i {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.slider img {
+  width: 80px;
+  height: 80px;
+}
+.title-box h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+  margin-bottom: 10px;
+}
+.title-box h3::before {
+  content: "C";
+  position: absolute;
+  color: #e3e3e3;
+  font-size: 80px;
+  left: 40%;
+  top: -40px;
+  z-index: -1;
+  text-transform: uppercase;
+}
+.slider p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+.slick-active .active {
+  background-color: #00c3da !important;
+}
+.slider h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 5px;
+  color: #1c1c1c;
+}
+.slider span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 30px;
+}
+.features nav {
+  display: flex;
+  flex-direction: column;
+}
+.btn-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #888 !important;
+}
+
+.carousel slide .carousel-control-prev [data-bs-target] {
+  color: #1c1c1c !important;
+}
+.carousel slide .carousel-control-prev:hover {
+  color: #1c1c1c !important;
+}
+#Pricing .button:hover i {
+  color: #0078ff !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.carousel-indicators .active4 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #00c3da !important;
+}
+
+.counter {
+  width: 100%;
+  position: relative;
+}
+.end-services {
+  width: 100%;
+}
+.counter .span {
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+#Works p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+#Works .box .content:hover {
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+}
+#Contact .box .item a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+  margin-bottom: 12px;
+  display: inline-block;
+  padding-top: 10px;
+}
+#Contact .box .item a i {
+  color: black;
+  font-size: 25px;
+}
+#Contact .box:hover a {
+  background-color: black;
+}
+#Contact .box:hover a i {
+  color: white;
+}
+#Contact .input input,
+#Contact .area textarea {
+  border: 1px solid white;
+  background-color: #f4f4f4 !important;
+  outline: none;
+}
+#Contact .buton {
+  width: 150px;
+  background-color: #1c1c1c;
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+}
+#Contact .buton:hover {
+  width: 150px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  height: 40px;
+}
+#Contact .input input:hover {
+  border: 1px solid white;
+}
+#Contact .input input:focus {
+  border: 1px solid white;
+}
+.title-box h3 {
+  position: relative;
+}
+.title-box h3::after {
+  content: "";
+  width: 100%;
+  height: 40px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  z-index: -1;
+}
+.gotoup {
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  bottom: 40px;
+  right: 20px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  color: #fafafa;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*---start media query----*/
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  #Home .slide-content h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 850.98px) {
+}
+
+@media (max-width: 767.98px) {
+  #navbar-example .header-socials {
+    display: none !important;
+  }
+  #Home .content {
+    top: 20%;
+  }
+  #Home .content .container h4 {
+    margin-bottom: 5px !important;
+    font-size: 1em;
+    font-weight: 900;
+  }
+
+  #Home .slide-content h1 {
+    font-size: 30px !important;
+  }
+  #Services .row1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #Services .row2 .center {
+    text-align: center;
+  }
+  #Services .row2 .layer .w {
+    left: 70px !important;
+  }
+  #Works .trans {
+    transform: scale(1) !important;
+  }
+  #Works {
+    padding: 30px !important;
+  }
+  #Pricing .carousel {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 120px !important;
+  }
+  #Pricing .button {
+    display: none !important;
+  }
+  #Pricing .p {
+    display: none !important;
+  }
+  #Contact .map {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 626.98px) {
+  #Home .slide-content h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  #Home .slide-content h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 390px) {
+  #Home .slide-content h1 {
+    font-size: 30px !important;
+  }
+}
+
+/*----end media query----*/
